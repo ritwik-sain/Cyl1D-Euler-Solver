@@ -100,7 +100,7 @@ Module[{drBYmu, rGrid, rPlotEnd, rho0, rhoMax, TMinVal, TMaxVal, exportPath,
   imgSize = 420;
   plotOpts = {Frame -> True, FrameStyle -> frameStyle,
     LabelStyle -> labelStyle, FrameTicksStyle -> tickStyle,
-    ImageSize -> imgSize, ImagePadding -> {{65, 18}, {45, 30}},
+    ImageSize -> imgSize, ImagePadding -> {{80, 18}, {45, 30}},
     GridLines -> Automatic, GridLinesStyle -> Directive[GrayLevel[0.85], Dashed]};
 
   (* Checkpoint plot generators *)
@@ -204,19 +204,19 @@ Module[{drBYmu, rGrid, rPlotEnd, rho0, rhoMax, TMinVal, TMaxVal, exportPath,
         LegendMarkerSize -> 22], {0.82, 0.85}],
       Joined -> True, Frame -> True, FrameStyle -> frameStyle,
       AspectRatio -> 1, LabelStyle -> labelStyle, FrameTicksStyle -> tickStyle,
-      ImageSize -> 500, ImagePadding -> {{70, 18}, {55, 40}},
+      ImageSize -> 500, ImagePadding -> {{80, 18}, {55, 40}},
       GridLines -> Automatic,
       GridLinesStyle -> Directive[GrayLevel[0.85], Dashed]]],
   {t, tMovie}];
 
   (* Export *)
   Module[{tempFile, densFile},
-    tempFile = FileNameJoin[{exportPath, "temperature_evolution.mp4"}];
-    densFile = FileNameJoin[{exportPath, "density_evolution.mp4"}];
+    tempFile = FileNameJoin[{exportPath, "temperature_evolution.gif"}];
+    densFile = FileNameJoin[{exportPath, "density_evolution.gif"}];
     Print["Exporting to: ", exportPath];
-    Print["  temperature_evolution.mp4 ..."];
+    Print["  temperature_evolution.gif ..."];
     Export[tempFile, tempFrames, "FrameRate" -> 15];
-    Print["  density_evolution.mp4 ..."];
+    Print["  density_evolution.gif ..."];
     Export[densFile, densFrames, "FrameRate" -> 15];
     Print[Style["  Done.", Bold, Darker[Green]]];
     Print["  ", tempFile];
