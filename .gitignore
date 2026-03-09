@@ -1,0 +1,20 @@
+# Mathematica generated files
+*.nb.bak
+*.cdf
+*.mx
+FrontEnd/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Movie outputs (generated, not tracked)
+*.mp4
+*.avi
+
+# Editor files
+*~
+*.swp
+.vscode/
+.idea/
