@@ -2,13 +2,13 @@
 
 **1D Cylindrical Eulerian Two-Fluid Solver for Coupled Plasma-Neutral Dynamics**
 
-A Wolfram Mathematica solver for modeling the radial expansion of a laser-produced plasma column into a surrounding neutral gas. The code solves the full two-temperature (Te ≠ Th) fluid equations with collisional ionization, charge-exchange drag, electron-ion thermalization, and flux-limited Spitzer thermal conduction — all in 1D cylindrical geometry.
+A Wolfram Mathematica solver for modeling the radial expansion of a laser-produced plasma column into a surrounding neutral gas. The code solves the full two-temperature (Te ≠ Th) fluid equations with collisional ionization, ion-neutral drag, electron-ion thermalization, and flux-limited Spitzer thermal conduction — all in 1D cylindrical geometry.
 
 ---
 
 ## Physics
 
-Two interpenetrating fluids — a plasma (ions + electrons) and a neutral gas — are coupled through collisional processes:
+Two interpenetrating fluids, a plasma (ions + electrons) and a neutral gas, are coupled through collisional processes:
 
 - **Collisional ionization** (Lotz empirical formula): neutrals → ions + electrons
 - **Ion-neutral momentum transfer** (charge-exchange + elastic drag): velocity equilibration
